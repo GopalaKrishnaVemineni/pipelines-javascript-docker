@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: gopalakrishnaveminenipipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gopalakrishnaveminenipipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: gopalakrishnaveminenipipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: gopalakrishnaveminenipipelinesjavascriptdocker 
+          image: ipocr.azurecr.io/gopalakrishnaveminenipipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
